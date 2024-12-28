@@ -2,7 +2,7 @@
 
 ## 環境
 
-Ubuntu 24.04 上にApache, PHP, Laravel をインストールします。
+Ubuntu 24.04 上にApache, PHP 8.3 をインストールします。
 
 モジュール版PHP を使います。
 
