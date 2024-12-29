@@ -1,0 +1,15 @@
+services:
+  ubuntu: 
+    build: .
+    container_name: nginx_php_on_ubuntu
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    tty: true
+    volumes:
+      - ./src:/var/www/html/
+    networks:
+      - recipe_db_network
+
+networks:
+  recipe_db_network:
+    external: true
